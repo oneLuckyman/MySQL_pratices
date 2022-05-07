@@ -28,3 +28,8 @@ INSERT INTO server_list(id, ip, server_name, logic_cpu_num) VALUES (7, '208.0.0.
 INSERT INTO server_list(id, ip, server_name, logic_cpu_num) VALUES (8, '208.0.0.3', 'tower03', 72);
 INSERT INTO server_list(id, ip, server_name, logic_cpu_num) VALUES (9, '208.0.0.83', 'tower_05', 224);
 INSERT INTO server_list(id, ip, server_name, logic_cpu_num) VALUES (10, '208.0.0.88', 'tower_08', 224);
+
+
+-- 创建mssm_80_320表：
+
+-- 插入mssm_80_320记录：
