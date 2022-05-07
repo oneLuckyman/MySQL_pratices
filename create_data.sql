@@ -31,5 +31,8 @@ INSERT INTO server_list(id, ip, server_name, logic_cpu_num) VALUES (10, '208.0.0
 
 
 -- 创建mssm_80_320表：
+CREATE TABLE server_list (
+    id BIGINT NOT NULL AUTO_INCREMENT,          -- 自增id
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 插入mssm_80_320记录：
