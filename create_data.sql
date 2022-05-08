@@ -31,8 +31,24 @@ INSERT INTO server_list(id, ip, server_name, logic_cpu_num) VALUES (10, '208.0.0
 
 
 -- 创建mssm_80_320表：
-CREATE TABLE server_list (
+CREATE TABLE mssm_80_320 (
     id BIGINT NOT NULL AUTO_INCREMENT,          -- 自增id
+    ip VARCHAR(20) NOT NULL,                    -- 服务器ip
+    task INT NOT NULL,                          -- 任务id
+    num_process INT NOT NULL,                   -- 进程数量
+    one_process_para_nums INT NOT NULL,         -- 一个进程计算的参数点数量
+    start_para_index INT NOT NULL,              -- 起始参数点索引
+    all_para_nums INT NOT NULL,                 -- 所有参数点数量
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 插入mssm_80_320记录：
+INSERT INTO mssm_80_320(id, ip, task, num_process, one_process_para_nums, start_para_index, all_para_nums) VALUES (1, '10.10.75.204', 1, 70, 9, 1, 630);
+INSERT INTO mssm_80_320(id, ip, task, num_process, one_process_para_nums, start_para_index, all_para_nums) VALUES (2, '10.10.75.207', 2, 30, 20, 631, 600);
+INSERT INTO mssm_80_320(id, ip, task, num_process, one_process_para_nums, start_para_index, all_para_nums) VALUES (3, '10.10.75.208', 3, 30, 20, 1231, 600);
+INSERT INTO mssm_80_320(id, ip, task, num_process, one_process_para_nums, start_para_index, all_para_nums) VALUES (4, '10.10.75.206', 4, 30, 13, 1831, 390);
+INSERT INTO mssm_80_320(id, ip, task, num_process, one_process_para_nums, start_para_index, all_para_nums) VALUES (5, '208.0.0.1', 5, 30, 15, 2221, 450);
+INSERT INTO mssm_80_320(id, ip, task, num_process, one_process_para_nums, start_para_index, all_para_nums) VALUES (6, '208.0.0.2', 6, 30, 15, 2671, 450);
+INSERT INTO mssm_80_320(id, ip, task, num_process, one_process_para_nums, start_para_index, all_para_nums) VALUES (7, '208.0.0.83', 7, 30, 32, 3121, 960);
+
+-- OK:
+SELECT 'ok' as 'result:';
