@@ -6,6 +6,7 @@ USE htu_ThPhy_server;
 
 -- 删除server_list表（如果存在）：
 DROP TABLE IF EXISTS server_list;
+DROP TABLE IF EXISTS mssm_80_320;
 
 -- 创建server_list表：
 CREATE TABLE server_list (
@@ -39,6 +40,7 @@ CREATE TABLE mssm_80_320 (
     one_process_para_nums INT NOT NULL,         -- 一个进程计算的参数点数量
     start_para_index INT NOT NULL,              -- 起始参数点索引
     all_para_nums INT NOT NULL,                 -- 所有参数点数量
+    PRIMARY KEY (id)                            -- 主键
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 插入mssm_80_320记录：
